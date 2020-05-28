@@ -1,4 +1,4 @@
-{% set version = "2.2.0" %}
+{% set version = "2.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rgbif_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rgbif/rgbif_{{ version }}.tar.gz
-  sha256: 4a2a75cf55b0a9ffae529a2fef6682e788774897a32bfc7d09e0c7fd818e6a90
+  sha256: 0c383d91da0724c5f8a5e785c0ab83620fa748073646f81a8ddcaef6893b64ae
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -60,10 +60,8 @@ test:
 about:
   home: https://github.com/ropensci/rgbif, https://ropensci.github.io/rgbif, https://ropensci.github.io/occurrence-manual
   license: MIT
-  summary: A programmatic interface to the Web Service methods provided by the Global Biodiversity Information Facility ('GBIF'; <https://www.gbif.org/developer/summary>).
-    'GBIF' is a database of species occurrence records from sources all over the globe. 'rgbif' includes functions for searching for taxonomic names, retrieving information
-    on data providers, getting species occurrence records, getting counts of occurrence records, and using the 'GBIF' tile map service to make 'rasters' summarizing
-    huge amounts of data.
+  summary: A programmatic interface to the Web Service methods provided by the Global Biodiversity Information Facility ('GBIF'; <https://www.gbif.org/developer/summary>). 'GBIF' is a database of species occurrence records from sources all over the globe. 'rgbif' includes functions for searching for taxonomic names, retrieving
+    information on data providers, getting species occurrence records, getting counts of occurrence records, and using the 'GBIF' tile map service to make 'rasters' summarizing huge amounts of data.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
