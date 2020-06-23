@@ -25,6 +25,7 @@ requirements:
     - {{ posix }}zip              # [win]
   host:
     - r-base
+    - r-conditionz
     - r-crul >=0.7.4
     - r-data.table
     - r-geoaxe
@@ -33,12 +34,14 @@ requirements:
     - r-lazyeval
     - r-magrittr
     - r-oai >=0.2.2
+    - r-r6
     - r-tibble
     - r-whisker
     - r-wicket >=0.4.0
     - r-xml2
   run:
     - r-base
+    - r-conditionz
     - r-crul >=0.7.4
     - r-data.table
     - r-geoaxe
@@ -47,6 +50,7 @@ requirements:
     - r-lazyeval
     - r-magrittr
     - r-oai >=0.2.2
+    - r-r6
     - r-tibble
     - r-whisker
     - r-wicket >=0.4.0
