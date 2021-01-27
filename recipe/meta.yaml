@@ -1,4 +1,4 @@
-{% set version = "3.4.2" %}
+{% set version = "3.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rgbif_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rgbif/rgbif_{{ version }}.tar.gz
-  sha256: de580de62bfe875b39e8c3a5be758b9a00bc1cb1d1094c0533f2b6d23d19dac8
+  sha256: 672fcc55c79aa8aea775a68aef858403374f0ec6ebc368dca584c0309181f261
 
 build:
   merge_build_host: true  # [win]
