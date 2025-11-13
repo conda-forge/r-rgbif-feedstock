@@ -1,4 +1,4 @@
-{% set version = "3.8.3" %}
+{% set version = "3.8.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rgbif_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rgbif/rgbif_{{ version }}.tar.gz
-  sha256: b4f42397bb855aa10348f5980e25b6a478105f76fb39fb7cab17078a369705e1
+  sha256: 3f76f7fe75863ff1cb59f933a2fcb9a34c6e1dd244e5d8cd435862189d7eabe9
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
