@@ -1,4 +1,4 @@
-{% set version = "3.8.5" %}
+{% set version = "3.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rgbif_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rgbif/rgbif_{{ version }}.tar.gz
-  sha256: d72bf337d2158e000397ff61e16e14133dc8e923cede6460b9a1240e68e585de
+  sha256: 5c367354b7ec1297972280a58cdd822b4508ba7c8babb5a7b43f1f5b50a2a959
 
 build:
   number: 0
